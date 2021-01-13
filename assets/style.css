@@ -1,0 +1,36 @@
+#noteHeader{
+	background-color: #4e4e4e;
+	height: 56px;
+	width: auto;
+}
+#noteHeadTxt{
+	text-align: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 24pt;
+	font-weight: bold;
+	color: #C7C7C7;
+	padding-top: 3px;
+}
+#saveBtn{
+	float: right;
+	height: 50px;
+	margin-top: 3px;
+	margin-right: 3px;
+}
+#dictionary{
+	float: right;
+}
+#nav{
+	background-color: #272727;
+}
+#navName{
+	color: #c7c7c7;
+}
+#navSub{
+	color: #c7c7c7;
+}
+#searchBtn{
+	background-color: #6C757D;
+	border: none;
+	color: #ffffff;
+}
