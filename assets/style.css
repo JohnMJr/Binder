@@ -26,8 +26,29 @@
 #navName{
 	color: #c7c7c7;
 }
-#navSub{
+#math{
 	color: #c7c7c7;
+}
+#math.active{
+	color: #28A745;
+}
+#sci{
+	color: #c7c7c7;
+}
+#sci.active{
+	color: #28A745;
+}
+#eng{
+	color: #c7c7c7;
+}
+#eng.active{
+	color: #28A745;
+}
+#hist{
+	color: #c7c7c7;
+}
+#hist.active{
+	color: #28A745;
 }
 #searchBtn{
 	background-color: #6C757D;
