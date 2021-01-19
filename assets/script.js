@@ -14,7 +14,41 @@ $('#searchBtn').on('click', function(){
         url: "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + searchInput + "?key=" + dictionaryKey,
         method: "GET"
     }).then(function(response){
-        $("#dictionary").text(JSON.stringify(response));
+        console.log(response)
+        var defDiv = $("#dictionary");
+        
+        // Retrieves the Rating Data
+        //var rating = response.Rated
+
+        // Creates an element to have the rating displayed
+        //var pOne = $("<p>").text("Rating: " + rating);
+
+        // Displays the rating
+        //defDiv.append(pOne);
+
+        // Retrieves the release year
+        //var released = response.Released;
+
+        // Creates an element to hold the release year
+        //var pTwo = $("<p>").text("Released: " + released);
+
+        // Displays the release year
+        //defDiv.append(pTwo);
+
+        // Retrieves the plot
+        //var plot = response.Plot;
+
+        // Creates an element to hold the plot
+        //var pThree = $("<p>").text("Plot: " + plot);
+
+        // Appends the plot
+        //defDiv.append(pThree);
+
+        // Creates an element to hold the image
+        //var moviePoster = response.
+        // Appends the image
+        // Puts the entire Movie above the previous movies.
+      });
     }); 
 });
 
@@ -30,7 +64,7 @@ function displayNote(){
 }
 
 function loadSave(){
-    let storedData = JSON.parse(localStorage.getItem('Note'));
+    let storedData = JSON.parse(localStorage.getItem('#Note'));
 
     if (storedData) {
         noteData = storedData;
@@ -44,12 +78,12 @@ loadSave();
 
 
 // Event listener for when the Save Note button is pressed to save the updated note to local storage
-$('#saveBtn').on('click', function (event) {
-    event.preventDefault();
-    let saveIndex = $(this).siblings('.form;').children('.Note').attr('id');
-    noteData[saveIndex].reminder = $(this.siblinings(".form").children(".Note").val();
-    console.log(saveIndex);
+$('#saveBtn').on('click', function (){
+    console.log(localStorage.getItem('Note'));
+
     saveNote();
     displayNote();
-})
+
+});
    
+loadSave();
