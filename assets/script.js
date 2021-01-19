@@ -9,8 +9,11 @@ let googleCal = $('#googleCal');
 // Creates event (click) listener to fire when the div class .searchBtn is pressed for searching and opening a new tab with the miriam webster page of the word that was searched
 $('#searchBtn').on('click', function(){
     let searchInput = $('#dictionaryInput').val();
-    $.ajax({url: "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + searchInput + "?key=" + dictionaryKey})
-    });
+    $.ajax({url: "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + searchInput + "?key=" + dictionaryKey, success: function(result){
+    $("#dictionary").html(result);
+  }});
+});
+
     
 // actual api call https://www.dictionaryapi.com/api/v3/references/collegiate/json/ + searchInput + ?key= + dictionaryKey
 
@@ -19,11 +22,13 @@ $('#searchBtn').on('click', function(){
 
 // Event listener for when the Save Note button is pressed to save the updated note to local storage
 
-$('#saveBtn').on('click', function saveNote (obj){
-    saveNote.obj = obj;
-    // saveNote.foo = foo
-    saveNote.val
-});
+// Store your data.
+function saveStuff(obj) {
+    saveData.obj = obj;
+    // saveData.foo = foo;
+    saveData.time = new Date().getTime();
+    localStorage.saveData = JSON.stringify(saveData);
+  }
 
 // Event listener for switching between the subjects and hiding the active note and unhiding the inactive note
 
