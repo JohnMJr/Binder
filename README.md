@@ -9,11 +9,17 @@ Binder Notes App
     * Binder, is a note taking app, that allows you to sort your notes based on the different subjects that you are taking. It allows this to happen, by letting the user input notes into a text box which then save to their own local storage. The app also has a small area, in which the user can input and specific word that they might want/need a definition for.
 
 # How to Use (Note-Taking)
-* In the Navigation Panel, located at the top of the page, are a list of subjects:
+* In the NavBar, located at the top of the page, are a list of subjects:
     * Math
     * Science
     * English
     * History
 * This allows the User to navigate back and forth between different notepads.
 * Simply, click on the written subject and you will be redirected to the corresponding workspace.
-* If the User wishes to save their workspace, they must click on the green 'Save Note' button, located at the top right of each page.
+* If the User wishes to save their workspace, they are able to by clicking the green 'Save Note' button, located at the top right of each page.
+* This allows the User to refresh the page, without losing their notes.
+
+# How to Use (Dictionary)
+ * Located at the top right of the page, in the NavBar, is a search-bar. This allows for the User to input a word they wish to find a definition for.
+ * After inputing into the 'search-bar', the user must then click the 'Search' button, located directly next to the 'search-bar'.
+ * This starts the search process

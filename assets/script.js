@@ -17,40 +17,24 @@ $('#searchBtn').on('click', function(){
         console.log(response)
         var defDiv = $("#dictionary");
         
-        // Retrieves the Rating Data
-        //var rating = response.Rated
+		// makes it so response returns only first array
+		var resp = response[0];
+		
+        // Retrieves the fl
+        var fl = resp.fl;
+		
+		// Retrieves the release year
+        var shortdef = resp.shortdef[0];
+		
+        // Creates an element to have the short definition displayed
+        var searchedWord = $("<p id='usrInput'>").text(searchInput);
+		var retDef = $("<p id='rtnDef'>").text(fl + '-' + shortdef );
 
-        // Creates an element to have the rating displayed
-        //var pOne = $("<p>").text("Rating: " + rating);
-
-        // Displays the rating
-        //defDiv.append(pOne);
-
-        // Retrieves the release year
-        //var released = response.Released;
-
-        // Creates an element to hold the release year
-        //var pTwo = $("<p>").text("Released: " + released);
-
-        // Displays the release year
-        //defDiv.append(pTwo);
-
-        // Retrieves the plot
-        //var plot = response.Plot;
-
-        // Creates an element to hold the plot
-        //var pThree = $("<p>").text("Plot: " + plot);
-
-        // Appends the plot
-        //defDiv.append(pThree);
-
-        // Creates an element to hold the image
-        //var moviePoster = response.
-        // Appends the image
-        // Puts the entire Movie above the previous movies.
+        // Displays the short def
+        defDiv.append(searchedWord);
+		defDiv.append(retDef);
       });
-    }); 
-});
+}); 
 
 
     
