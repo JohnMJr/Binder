@@ -4,7 +4,7 @@ const dictionaryKey = 'f9a039f2-30bb-4050-b54e-4b87b2fa7d8e';
 let subjectArray = ['math', 'science', 'english', 'history'];
 let save = $('#saveBtn');
 let googleCal = $('#googleCal');
-let noteData = $('#Note');
+let notePad = $('#notePad');
 
 
 // Creates event (click) listener to fire when the div class .searchBtn is pressed for searching and opening a new tab with the miriam webster page of the word that was searched
@@ -56,18 +56,18 @@ $('#searchBtn').on('click', function(){
     
 
 function saveNote(){
-    localStorage.setItem('Note', JSON.stringify(noteData));
+    localStorage.setItem('notePad', JSON.stringify(notePad));
 }
 
 function displayNote(){
-    return noteData.text || 'Note';
+    return noteData.text || 'notePad';
 }
 
 function loadSave(){
-    let storedData = JSON.parse(localStorage.getItem('#Note'));
+    let storedData = JSON.parse(localStorage.getItem('#notePad'));
 
     if (storedData) {
-        noteData = storedData;
+        notePad = storedData;
     }
 
     saveNote();
