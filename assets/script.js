@@ -10,7 +10,7 @@ let googleCal = $('#googleCal');
 $('#searchBtn').on('click', function(){
     let searchInput = $('#dictionaryInput').val();
     $.ajax({url: "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + searchInput + "?key=" + dictionaryKey, success: function(result){
-    $("#dictionary").html(result);
+    $("#dictionary").textContent(result);
   }});
 });
 
