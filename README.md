@@ -20,6 +20,16 @@ Binder Notes App
 * This allows the User to refresh the page, without losing their notes.
 
 # How to Use (Dictionary)
- * Located at the top right of the page, in the NavBar, is a search-bar. This allows for the User to input a word they wish to find a definition for.
- * After inputing into the 'search-bar', the user must then click the 'Search' button, located directly next to the 'search-bar'.
- * This starts the search process
+* Located at the top right of the page, in the NavBar, is a search-bar. This allows for the User to input a word they wish to find a definition for.
+* After inputing into the 'search-bar', the user must then click the 'Search' button, located directly next to the 'search-bar'.
+* This starts the search process.
+    * The searched item will appear at the bottom of the page and with the definition located directly below your desired search.
+
+# Code Used
+* APIs Used
+    * Merrian-Webster Dictionary
+    * GoogleCalender
+* Languages Used
+    * HTML
+    * Javascript
+    * CSS
