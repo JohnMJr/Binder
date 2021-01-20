@@ -17,9 +17,6 @@
 	margin-top: 3px;
 	margin-right: 3px;
 }
-#dictionary{
-	float: right;
-}
 #nav{
 	background-color: #272727;
 }
@@ -71,6 +68,17 @@
 	color:#272727;
 }
 #histNote{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 12pt;
+	color:#272727;
+}
+#usrInput{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 18pt;
+	color:#272727;
+	font-weight: bold;
+}
+#rtnDef{
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	font-size: 12pt;
 	color:#272727;
