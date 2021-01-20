@@ -1,4 +1,4 @@
-
+ 
 //Global Variables
 const dictionaryKey = 'f9a039f2-30bb-4050-b54e-4b87b2fa7d8e';
 let subjectArray = ['math', 'science', 'english', 'history'];
@@ -36,38 +36,48 @@ $('#searchBtn').on('click', function(){
       });
 }); 
 
+$(document).ready(
+    notePad.val(localStorage.getItem('test'))
+);
 
-    
-
-function saveNote(){
-    localStorage.setItem('notePad', JSON.stringify(notePad));
-}
-
-function displayNote(){
-    return noteData.text || 'notePad';
-}
-
-function loadSave(){
-    let storedData = JSON.parse(localStorage.getItem('#notePad'));
-
-    if (storedData) {
-        notePad = storedData;
-    }
-
-    saveNote();
-    displayNote();
-}
-
-loadSave();
-
-
-// Event listener for when the Save Note button is pressed to save the updated note to local storage
-$('#saveBtn').on('click', function (){
-    console.log(localStorage.getItem('Note'));
-
-    saveNote();
-    displayNote();
-
+save.on('click', function(){
+    localStorage.setItem('test', notePad.val());
 });
+
+// localStorage['notePad'] = notePad;
+// $('#notePad').text('subjectArray' + notePad);
+
+// console.log(localStorage)
+
+// function saveNote(){
+//     localStorage.setItem('notePad', JSON.stringify(notePad.text()));
+// }
+
+//function displayNote(){
+    //return noteData.text || 'notePad';
+//}
+
+// function loadSave(){
+//     let storedData = JSON.parse(localStorage.getItem('#notePad'));
+
+//     if (storedData) {
+//         notePad = storedData;
+//     }
+
+//     saveNote();
+//     displayNote();
+// }
+
+// loadSave();
+
+
+// // Event listener for when the Save Note button is pressed to save the updated note to local storage
+// $('#saveBtn').on('click', function (){
+//     console.log(localStorage.getItem('Note'));
+
+//     saveNote();
+//     displayNote();
+
+// });
    
-loadSave();
+// loadSave();

@@ -83,3 +83,9 @@
 	font-size: 12pt;
 	color:#272727;
 }
+#dictionaryInput{
+	float: right;
+}
+#searchBtn{
+	float: right;
+}
